@@ -7,12 +7,13 @@ body {
   .content,
   .contact-section,
   .footer-section {
-    padding: 0 35px;
+    padding: 0 35px; 
   }
   
   .navigation {
     display: flex;
     justify-content: space-between;
+    position: sticky;top:8px
   }
   
   .header-title {
@@ -89,7 +90,7 @@ body {
     align-items: center;
     justify-content: center;
     font-size: 17px;
-    margin-top: 16px;
+    margin-top: 60px;
   }
   
   .flex-container,
@@ -135,8 +136,7 @@ body {
   
   .image-container,
   .profile-image {
-    aspect-ratio: 1.16;
-    object-fit: auto;
+    object-fit: contain;
     object-position: center;
     width: 100%;
     flex-grow: 1;
@@ -289,3 +289,8 @@ body {
     font-size: 17px;
   }
   
+
+  .social-icon{
+    width: 50px;
+    height: 50px;
+  }
