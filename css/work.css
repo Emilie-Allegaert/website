@@ -1,0 +1,80 @@
+body {
+    font-family: Epilogue, sans-serif;
+    background-color: #fff;
+    color: #2d2d2d;
+  }
+
+  .navigation,
+  .work-intro,
+  .work-display,
+  .final-message {
+    padding: 20px;
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+
+
+
+  .work-intro {
+    text-align: center;
+  }
+
+  .work-item {
+    display: flex;
+    margin-top: 20px;
+  }
+
+  .work-description {
+    margin-top: 25px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 150%;
+  }
+
+  .work-artist {
+    margin-top: 10px;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 159%;
+  }
+
+  .thanks-visit,
+  .social-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+  }
+
+  .thanks-message {
+    font-weight: 600;
+    flex-grow: 1;
+  }
+
+  img {
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+  }
+
+  @media (max-width: 991px) {
+    .navigation,
+    .work-display,
+    .final-message {
+      padding: 0 20px;
+    }
+
+    header {
+      flex-direction: column;
+    }
+
+    .navigation-link {
+      margin: 10px 0;
+    }
+
+    .work-item {
+      flex-direction: column;
+    }
+  }
+
+  

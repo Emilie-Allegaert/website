@@ -1,0 +1,291 @@
+body {
+    background-color: #fff;
+    font-family: Epilogue, sans-serif;
+  }
+  
+  .navigation,
+  .content,
+  .contact-section,
+  .footer-section {
+    padding: 0 35px;
+  }
+  
+  .navigation {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .header-title {
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 140%;
+    margin: auto 0;
+  }
+  
+  .nav-links {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 165%;
+  }
+  
+  a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  .main-content {
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .profile-details {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    color: #2d2d2d;
+    margin-top: 33px;
+    font-weight: 600;
+    padding: 20px;
+  }
+  
+  .profile-title {
+    font-size: 60px;
+    line-height: 70px;
+    margin-top: 40px;
+  }
+  
+  .profile-description {
+    font-size: 17px;
+    line-height: 159%;
+    margin-top: 40px;
+  }
+  
+  .contact-button {
+    margin-top: 40px;
+    border-radius: 50%;
+    background-color: #009478;
+    color: #fff;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 21px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  
+  .contact-image {
+    width: 100%;
+    aspect-ratio: 1.01;
+    object-fit: cover;
+  }
+  
+  .footer-thankyou {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 17px;
+    margin-top: 16px;
+  }
+  
+  .flex-container,
+  .flex-container-column,
+  .image-container {
+    display: flex;
+  }
+  
+  .flex-container {
+    gap: 20px;
+  }
+  
+  .flex-container-column,
+  .image-container {
+    flex-direction: column;
+    line-height: normal;
+    width: 100%;
+    margin: 0;
+  }
+  
+  .profile-details,
+  .skillset,
+  .role,
+  .introduction {
+    font-family: Epilogue, sans-serif;
+  }
+  
+  .skillset {
+    font-size: 20px;
+    line-height: 150%;
+  }
+  
+  .role {
+    margin-top: 46px;
+    font-size: 80px;
+    line-height: 90px;
+  }
+  
+  .introduction {
+    margin-top: 65px;
+    font: 400 17px/159% Epilogue, sans-serif;
+  }
+  
+  .image-container,
+  .profile-image {
+    aspect-ratio: 1.16;
+    object-fit: auto;
+    object-position: center;
+    width: 100%;
+    flex-grow: 1;
+  }
+  
+  @media (max-width: 991px) {
+    .navigation,
+    .content,
+    .contact-section,
+    .footer-section {
+      padding: 0 20px;
+    }
+  
+    .profile-title {
+      font-size: 40px;
+      line-height: 50px;
+    }
+  
+    .nav-links {
+      flex-wrap: wrap;
+    }
+  
+    .main-content {
+      flex-direction: column;
+    }
+  
+    .flex-container {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 0px;
+    }
+  
+    .flex-container-column,
+    .image-container {
+      max-width: 100%;
+      margin: 0;
+    }
+  
+    .profile-details {
+      max-width: 100%;
+      margin-top: 35px;
+    }
+  
+    .skillset,
+    .role {
+      max-width: 100%;
+    }
+  
+    .role {
+      margin-top: 40px;
+      font-size: 40px;
+      line-height: 50px;
+    }
+  
+    .introduction {
+      margin-top: 40px;
+    }
+  
+    .profile-image {
+      max-width: 100%;
+    }
+  
+    .gallery-container {
+      padding: 20px;
+    }
+  
+    .gallery-title {
+      font-size: 24px;
+    }
+  
+    .gallery-section {
+      margin: 40px 10px 0;
+    }
+  
+    .row {
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+  
+  .gallery-container {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 80px;
+  }
+  
+  .gallery-title {
+    color: var(--Black, #2d2d2d);
+    text-align: center;
+    align-self: center;
+    font: 600 32px/131% Epilogue, sans-serif;
+  }
+  
+  @media (max-width: 991px) {
+    .gallery-title {
+      font-size: 24px;
+    }
+  }
+  
+  .gallery-section {
+    margin: 60px 20px 0;
+  }
+  
+  @media (max-width: 991px) {
+    .gallery-section {
+      margin: 40px 10px 0;
+    }
+  }
+  
+  .row {
+    display: flex;
+    gap: 20px;
+  }
+  
+  @media (max-width: 991px) {
+    .row {
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+  
+  .column {
+    display: flex;
+    flex-direction: column;
+    width: calc(33.333% - 10px);
+  }
+  
+  .music-item {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .music-image {
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+  }
+  
+  .music-title,
+  .music-artist {
+    font-weight: 600;
+    font-size: 20px;
+    margin: 25px 0 10px;
+    font-family: Epilogue, sans-serif;
+  }
+  
+  .music-artist {
+    font-weight: 400;
+    font-size: 17px;
+  }
+  
